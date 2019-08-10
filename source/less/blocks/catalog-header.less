@@ -3,8 +3,28 @@
   font-size: 36px;
   line-height: 60px;
   text-align: center;
+  margin: 0;
   padding-top: 22px;
   padding-bottom: 23px;
   border-top: 1px solid @border-lines;
   border-bottom: 1px solid @border-lines;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-header {
+    margin: 0 auto;
+    margin-bottom: 156px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    width: 708px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-header {
+    width: 1220px;
+  }
 }

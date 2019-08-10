@@ -1,7 +1,6 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   background-color: @bg-wgrey;
 }
 
@@ -9,4 +8,30 @@
   margin: 0 auto;
   margin-top: 34px;
   margin-bottom: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-left: 2.9%;
+    padding-top: 61px;
+    padding-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page-footer__logo {
+    margin-left: 7.65%;
+  }
 }
