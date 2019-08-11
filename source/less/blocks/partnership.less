@@ -1,19 +1,23 @@
 .partnership {
   min-height: 476px;
-  display: flex;
   margin: 0 auto;
-  justify-content: center;
   margin-top: 31px;
   background:
-    url("../img/map-pin-png-50.png") no-repeat 50% 56%,
-    url("../img/map.jpg") no-repeat 50% 100%;
+    url("../img/map-pin-png-50.png") no-repeat 52% 64%,
+    url("../img/map.jpg") no-repeat 82% 100%;
 }
+
+.partnership__header {
+  display: flex;
+  justify-content: center;
+}
+
 
 .partnership__invitation {
   width: 123px;
   margin: 0;
   margin-right: 10px;
-  font-family: "Oswald";
+  font-family: @oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -23,4 +27,61 @@
   width: 144px;
   font-style: normal;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .partnership {
+    margin: 0 auto;
+    width: 767px;
+    height: 597px;
+    background:
+      url("../img/map-pin-png-50.png") no-repeat 50% 73%,
+      url("../img/map.jpg") no-repeat 102% 100%;
+  }
+
+  .partnership__header {
+    width: 625px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 66px;
+  }
+
+  .partnership__invitation {
+    margin: 0;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .partnership__adress {
+    width: 160px;
+    font-size: 16px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .partnership {
+    position: relative;
+    width: 1440px;
+    background:
+      url("../img/map-pin-png-50.png") no-repeat 75% 73%,
+      url("../img/map.jpg") no-repeat bottom;
+  }
+
+  .partnership__header {
+    position: absolute;
+    padding: 0;
+    width: 570px;
+    height: 201px;
+    background-color: @white;
+    top: 295px;
+    left: 110px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .partnership__adress-city {
+    margin: 0;
+    padding-top: 15px;
+  }
 }

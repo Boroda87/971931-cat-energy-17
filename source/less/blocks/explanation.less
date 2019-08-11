@@ -5,7 +5,7 @@
 
 .explanation__header {
   margin: 0;
-  font-family: "Oswald";
+  font-family: @oswald;
   font-size: 36px;
   line-height: 60px;
   margin-bottom: 41px;
@@ -22,4 +22,67 @@
   color: @text-grey;
   margin-bottom: 31px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .explanation {
+    width: 708px;
+  }
+
+  .explanation__header {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 180px;
+  }
+
+  .explanation__list {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .explanation__list-item {
+    margin: 0;
+    width: 46%;
+  }
+
+  .explanation__list-item p {
+    width: 80%;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .explanation__list-item--first,
+  .explanation__list-item--second {
+    margin-bottom: 254px;
+  }
+
+  .explanation__list-item--third,
+  .explanation__list-item--fourth {
+    margin: 0;
+    margin-bottom: 105px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .explanation {
+    width: 1440px;
+    justify-content: space-between;
+  }
+
+  .explanation__wrapper {
+    width: 1240px;
+    margin: 0 auto;
+  }
+
+  .explanation__list-item {
+    width: 20%;
+    margin-bottom: 138px;
+  }
+
+  .explanation__list-item p {
+    width: 100%;
+  }
 }

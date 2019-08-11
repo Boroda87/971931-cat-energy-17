@@ -1,7 +1,6 @@
 .show-all {
   margin: 0 auto;
   text-align: center;
-  border-top: 1px solid @border-lines;
   border-bottom: 1px solid @border-lines;
 }
 
@@ -17,4 +16,34 @@
   font-size: 12px;
   line-height: 12px;
   margin-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .show-all {
+    margin: 0 auto;
+    width: 324px;
+    height: 431px;
+    border: 1px solid @border-lines;
+  }
+
+  .show-all__products {
+    width: 140px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .show-all__tastes {
+    width: 170px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .show-all {
+    width: 245px;
+  }
 }

@@ -4,7 +4,7 @@
   text-transform: uppercase;
   color: @white;
   background-color: @bg-green;
-  font-family: "Oswald";
+  font-family: @oswald;
   width: 280px;
   padding-top: 12px;
   padding-bottom: 11px;
@@ -26,7 +26,6 @@
   width: 31px;
   height: 31px;
   background: url("../img/plus-mobile-svg.svg");
-  object-fit: contain;
   opacity: 0.2;
   border-color: transparent;
   margin-top: 23px;
@@ -37,4 +36,36 @@
   background-color: @bg-wgrey;
   margin-bottom: 24px;
   color: @text-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .button:not(.button--plus-button) {
+    width: 249px;
+  }
+
+  .button--plus-button {
+    width: 61px;
+    height: 61px;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    background: url("../img/plus-svg.svg");
+  }
+
+  .button--program-calculator {
+    display: none;
+  }
+
+  .button--show-all {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--program-calculator {
+    display: none;
+  }
+
+  .button:not(.button--plus-button):not(.presentation--program-calculator) {
+    width: 169px;
+  }
 }

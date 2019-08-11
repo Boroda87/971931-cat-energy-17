@@ -1,5 +1,5 @@
 .presentation {
-  font-family: "Oswald";
+  font-family: @oswald;
   width: 320px;
   height: 437px;
   background:
@@ -26,9 +26,79 @@
   text-transform: uppercase;
 }
 
-// @media (min-width: @desktop-width) {
-//   .presentation {
-//     width: 1440px;
-//     height: 696px;
-//   }
-// }
+.presentation--program-calculator {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation {
+    width: 709px;
+    height: 800px;
+    margin: 0 auto;
+    background: url("../img/index-can-tablet-jpg.png") no-repeat bottom;
+  }
+
+  .presentation__header {
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+    color: @black;
+    text-align: left;
+  }
+
+  .presentation__paragraph {
+    color: @black;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 48px;
+  }
+
+  .presentation--program-calculator {
+    display: block;
+    margin-left: 0;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    width: 1440px;
+    height: 696px;
+    background:
+      url("../img/index-can-desktop@1x.png") no-repeat 63% 65%,
+      url("../img/index-background-desktop-jpg.png") no-repeat 100%;
+    text-align: left;
+    color: @black;
+    margin-bottom: 80px;
+  }
+
+  .presentation__header {
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 226px;
+    padding-left: 193px;
+    margin-bottom: 33px;
+  }
+
+  .presentation__paragraph {
+    padding-left: 193px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 53px;
+  }
+
+  .presentation--program-calculator {
+    display: block;
+    margin-left: 193px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
